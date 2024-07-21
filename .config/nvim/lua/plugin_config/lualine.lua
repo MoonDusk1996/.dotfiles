@@ -1,7 +1,5 @@
-local status_ok, lualine = pcall(require, "lualine")
-if not status_ok then
-  return
-end
+local lualine = require("lualine")
+
 -- Color for highlights
 local colors = {
   yellow = '#ECBE7B',

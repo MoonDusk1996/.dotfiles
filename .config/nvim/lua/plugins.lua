@@ -17,6 +17,7 @@ require("lazy").setup({
     'hrsh7th/cmp-path',                    -- Completar caminhos
     'numToStr/Comment.nvim',               -- Comentar código facilmente
   },
+
   -- Grupo de Plugins NeoTree
   {
     'nvim-neo-tree/neo-tree.nvim',   -- Explorador de arquivos NeoTree
@@ -24,8 +25,9 @@ require("lazy").setup({
       'nvim-lua/plenary.nvim',       -- Utilitários Lua
       'nvim-tree/nvim-web-devicons', -- Ícones para NeoTree
       'MunifTanjim/nui.nvim',        -- Biblioteca de UI
-    }
+    },
   },
+
   -- Grupo de Plugins LuaSnip
   {
     'L3MON4D3/LuaSnip',            -- Snippets em Lua
@@ -34,6 +36,7 @@ require("lazy").setup({
       'rafamadriz/friendly-snippets'
     },
   },
+
   -- Grupo de Plugins Telescope
   {
     'nvim-telescope/telescope.nvim',               -- Ferramenta de busca e visualização
@@ -42,8 +45,9 @@ require("lazy").setup({
       'nvim-lua/plenary.nvim',                     -- Utilitários Lua
       'nvim-lua/popup.nvim',                       -- Popup API
       'nvim-telescope/telescope-media-files.nvim', -- Visualização de arquivos de mídia
-    }
+    },
   },
+
   -- Grupo de Plugins Alpha
   {
     'goolord/alpha-nvim',            -- Tela inicial personalizada
@@ -52,11 +56,15 @@ require("lazy").setup({
       'nvim-lua/plenary.nvim'        -- Utilitários Lua
     },
   },
-  -- Grupo de plugins Auto-session
+
+  -- Grupo de Plugins Auto-session
   {
     'rmagatti/auto-session',
     dependencies = {
-      'nvim-telescope/telescope.nvim', -- Only needed if you want to use sesssion lens
+      'nvim-telescope/telescope.nvim', -- Necessário apenas se você quiser usar session lens
     },
   },
+ {
+    "potamides/pantran.nvim"
+  }
 })

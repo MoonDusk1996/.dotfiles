@@ -1,7 +1,11 @@
 local cmp = require("cmp")
+local luasnip = require("luasnip")
 
-require("luasnip.loaders.from_vscode").lazy_load()
+-- Carregar snippets do VSCode
+-- require("luasnip.loaders.from_vscode").lazy_load()
+require("luasnip.loaders.from_snipmate").lazy_load()
 
+-- Configuração do nvim-cmp
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
@@ -12,7 +16,7 @@ cmp.setup({
   }),
   snippet = {
     expand = function(args)
-      require('luasnip').lsp_expand(args.body)
+      luasnip.lsp_expand(args.body)
     end,
   },
   sources = cmp.config.sources({

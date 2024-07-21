@@ -15,6 +15,6 @@ vim.fn.system({
 vim.opt.rtp:prepend(lazypath)
 
 -- Carrega os módulos personalizados
-require("plugins")       -- Carrega os plugins instalados
-require("options")       -- Configurações gerais do Neovim
-require("plugin_config") -- Configurações específicas de plugins
+require("plugins")       -- carrega os plugins instalados
+require("options")       -- configurações gerais do neovim
+require("plugin_config") -- configurações específicas de plugins
